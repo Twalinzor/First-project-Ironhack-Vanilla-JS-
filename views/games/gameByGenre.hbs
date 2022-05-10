@@ -1,0 +1,263 @@
+
+
+
+<div class="btn-group marginSort ">
+  <button type="button" class="btn btn-outline-light dropdown-toggle " style="background-color:rgba(9,51,68,1)" data-bs-toggle="dropdown" aria-expanded="false">
+    Sort By
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/games/genre/?genre=shooter&page=1&limit=10">Shooter</a></li>
+    <li><a class="dropdown-item" href="/games/genre/?genre=mmorpg&page=1&limit=10">Mmorpg</a></li>
+    <li><a class="dropdown-item" href="/games/genre/?genre=racing&page=1&limit=10">Racing</a></li>
+    <li><a class="dropdown-item" href="/games/genre/?genre=sports&page=1&limit=10">Sports</a></li>
+    <li><a class="dropdown-item" href="/games/genre/?genre=2d&page=1&limit=10">2D</a></li>
+    <li><hr class="dropdown-divider"></li>
+    
+  </ul>
+
+<h1 class ="h1genre" >{{genre}} Games</h1>
+ 
+</div>
+
+<div class ="marginTop">
+ <div class="container">
+  <div class="row">
+    <!-- Team Member 1 -->
+      {{#if resultGameList.[0]}}
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+      <a href="/games/{{resultGameList.[0].id}}/details"><img src="{{resultGameList.[0].thumbnail}}" class="card-img-top" alt="..."></a>
+        <div class="card-body text-center">
+          <h5 class="card-title mb-0">{{resultGameList.[0].title}}</h5>
+        
+        </div>
+      </div>
+    </div>
+    {{/if}}
+    <!-- Team Member 2 -->
+      {{#if resultGameList.[1]}}
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <a href="/games/{{resultGameList.[1].id}}/details"><img src="{{resultGameList.[1].thumbnail}}" class="card-img-top" alt="..."></a>
+        <div class="card-body text-center">
+          <h5 class="card-title mb-0">{{resultGameList.[1].title}}</h5>
+         
+        </div>
+      </div>
+    </div>
+    {{/if}}
+    <!-- Team Member 3 -->
+      {{#if resultGameList.[2]}}
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+         <a href="/games/{{resultGameList.[2].id}}/details"><img src="{{resultGameList.[2].thumbnail}}" class="card-img-top" alt="..."></a>
+        <div class="card-body text-center">
+          <h5 class="card-title mb-0">{{resultGameList.[2].title}}</h5>
+        
+        </div>
+      </div>
+    </div>
+    {{/if}}
+    <!-- Team Member 4 -->
+      {{#if resultGameList.[3]}}
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+         <a href="/games/{{resultGameList.[3].id}}/details"><img src="{{resultGameList.[3].thumbnail}}" class="card-img-top" alt="..."></a>
+        <div class="card-body text-center">
+          <h5 class="card-title mb-0">{{resultGameList.[3].title}}</h5>
+       
+        </div>
+      </div>
+    </div>
+    {{/if}}
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <!-- Team Member 1 -->
+      {{#if resultGameList.[4]}}
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+         <a href="/games/{{resultGameList.[4].id}}/details"><img src="{{resultGameList.[4].thumbnail}}" class="card-img-top" alt="..."></a>
+        <div class="card-body text-center">
+          <h5 class="card-title mb-0">{{resultGameList.[4].title}}</h5>
+         
+        </div>
+      </div>
+    </div>
+    {{/if}}
+    <!-- Team Member 2 -->
+      {{#if resultGameList.[5]}}
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+         <a href="/games/{{resultGameList.[5].id}}/details"><img src="{{resultGameList.[5].thumbnail}}" class="card-img-top" alt="..."></a>
+        <div class="card-body text-center">
+          <h5 class="card-title mb-0">{{resultGameList.[5].title}}</h5>
+        
+        </div>
+      </div>
+    </div>
+    {{/if}}
+    <!-- Team Member 3 -->
+      {{#if resultGameList.[6]}}
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+         <a href="/games/{{resultGameList.[6].id}}/details"><img src="{{resultGameList.[6].thumbnail}}" class="card-img-top" alt="..."></a>
+        <div class="card-body text-center">
+          <h5 class="card-title mb-0">{{resultGameList.[6].title}}</h5>
+          
+        </div>
+      </div>
+    </div>
+    {{/if}}
+    <!-- Team Member 4 -->
+      {{#if resultGameList.[7]}}
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+         <a href="/games/{{resultGameList.[7].id}}/details"><img src="{{resultGameList.[7].thumbnail}}" class="card-img-top" alt="..."></a>
+        <div class="card-body text-center">
+          <h5 class="card-title mb-0">{{resultGameList.[7].title}}</h5>
+         
+        </div>
+      </div>
+    </div>
+    {{/if}}
+
+  </div>
+</div>
+
+  <div class="container">
+  <div class="row">
+    <!-- Team Member 1 -->
+      {{#if resultGameList.[8]}}
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+         <a href="/games/{{resultGameList.[8].id}}/details"><img src="{{resultGameList.[8].thumbnail}}" class="card-img-top" alt="..."></a>
+        <div class="card-body text-center">
+          <h5 class="card-title mb-0">{{resultGameList.[8].title}}</h5>
+     
+        </div>
+      </div>
+    </div>
+    {{/if}}
+    <!-- Team Member 2 -->
+      {{#if resultGameList.[9]}}
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+         <a href="/games/{{resultGameList.[9].id}}/details"><img src="{{resultGameList.[9].thumbnail}}" class="card-img-top" alt="..."></a>
+        <div class="card-body text-center">
+          <h5 class="card-title mb-0">{{resultGameList.[9].title}}</h5>
+         
+        </div>
+      </div>
+    </div>
+    {{/if}}
+    <!-- Team Member 3 -->
+      {{#if resultGameList.[10]}}
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+         <a href="/games/{{resultGameList.[10].id}}/details"><img src="{{resultGameList.[10].thumbnail}}" class="card-img-top" alt="..."></a>
+        <div class="card-body text-center">
+          <h5 class="card-title mb-0">{{resultGameList.[10].title}}</h5>
+          
+        </div>
+      </div>
+    </div>
+    {{/if}}
+    <!-- Team Member 4 -->
+      {{#if resultGameList.[11]}}
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+         <a href="/games/{{resultGameList.[11].id}}/details"><img src="{{resultGameList.[11].thumbnail}}" class="card-img-top" alt="..."></a>
+        <div class="card-body text-center">
+          <h5 class="card-title mb-0">{{resultGameList.[11].title}}</h5>
+         
+        </div>
+      </div>
+    </div>
+    {{/if}}
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <!-- Team Member 1 -->
+      {{#if resultGameList.[12]}}
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+         <a href="/games/{{resultGameList.[12].id}}/details"><img src="{{resultGameList.[12].thumbnail}}" class="card-img-top" alt="..."></a>
+        <div class="card-body text-center">
+          <h5 class="card-title mb-0">{{resultGameList.[12].title}}</h5>
+          
+        </div>
+      </div>
+    </div>
+    {{/if}}
+    <!-- Team Member 2 -->
+      {{#if resultGameList.[13]}}
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+         <a href="/games/{{resultGameList.[13].id}}/details"><img src="{{resultGameList.[13].thumbnail}}" class="card-img-top" alt="..."></a>
+        <div class="card-body text-center">
+          <h5 class="card-title mb-0">{{resultGameList.[13].title}}</h5>
+          
+        </div>
+      </div>
+    </div>
+    {{/if}}
+    <!-- Team Member 3 -->
+      {{#if resultGameList.[14]}}
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+         <a href="/games/{{resultGameList.[14].id}}/details"><img src="{{resultGameList.[14].thumbnail}}" class="card-img-top" alt="..."></a>
+        <div class="card-body text-center">
+          <h5 class="card-title mb-0">{{resultGameList.[14].title}}</h5>
+          
+        </div>
+      </div>
+    </div>
+    {{/if}}
+    <!-- Team Member 4 -->
+    {{#if resultGameList.[15]}}
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+         <a href="/games/{{resultGameList.[15].id}}/details"><img src="{{resultGameList.[15].thumbnail}}" class="card-img-top" alt="..."></a>
+        <div class="card-body text-center">
+          <h5 class="card-title mb-0">{{resultGameList.[15].title}}</h5>
+          
+        </div>
+      </div>
+    </div>
+ {{/if}}
+  </div>
+</div>
+
+
+  <nav aria-label="Page navigation example fixed-bottom start-50 translate-middle-x">
+  <ul class="pagination justify-content-center flex-wrap" >
+    <li class="disabled">
+      <a class="page-link" href="/games/genre/?genre={{genre}}&page={{previousPage}}&limit=16" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="active"><a class="page-link" href="/games/genre/?genre={{genre}}&page=1&limit=16">1</a></li>
+    <li class="page-item"><a class="page-link" href="/games/genre/?genre={{genre}}&page=2&limit=16">2</a></li>
+    <li class="page-item"><a class="page-link" href="/games/genre/?genre={{genre}}&page=3&limit=16">3</a></li>
+    <li class="page-item"><a class="page-link" href="/games/genre/?genre={{genre}}&page=4&limit=16">4</a></li>
+    <li class="page-item"><a class="page-link" href="/games/genre/?genre={{genre}}&page=5&limit=16">5</a></li>
+    <li class="page-item"><a class="page-link" href="/games/genre/?genre={{genre}}&page=6&limit=16">6</a></li>
+    <li class="active"><a class="page-link" href="/games/genre/?genre={{genre}}&page=7&limit=16">7</a></li>
+
+ 
+    
+      <a class="page-link" href="/games/genre/?genre={{genre}}&page={{nextPage}}&limit=16" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+</div>
+
+

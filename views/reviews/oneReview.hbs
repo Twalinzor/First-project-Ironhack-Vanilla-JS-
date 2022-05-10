@@ -1,0 +1,42 @@
+<h1 class="text-center indexReviews topMargin">Review of <a href="/games/{{review.game.id}}/details">{{review.game.title}}</a></h1>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5 col-md-6 col-12 pb-4">
+              
+                <div class="comment mt-4 text-justify float-left"> 
+                    <div>
+
+                {{!-- <img src="{{review.author.profilePic}}" alt="" class="rounded-circle" width="40" height="40"> --}}
+                    </div>
+                    <div>
+
+                <h3 class="reviewHeaders">by: {{review.author.username}} <img src="{{review.author.profilePic}}" alt="" class="rounded-circle" width="40" height="40"></h3>
+                    </div>
+                </div>
+
+                    <h4 class="reviewHeaders2">{{review.title}}</h4> <span>{{createdAt}}</span> <br>
+                    <br>
+                    
+                    <p class="reviewDescription">{{review.description}}</p>
+                    {{#if review.imageUrl}}
+                    <a href="{{review.imageUrl}}" target="_blank"><img src="{{review.imageUrl}}" alt="" width="560"></a>
+                    {{/if}}
+                   {{#if hasVideo}}
+                    <iframe width="560" height="315" src="{{review.videoUrl}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                   {{/if}}
+                    {{#if userLiked}}
+                    <a href="/reviews/{{review._id}}/notlikes"><img src="/images/heart full real PMG.png" alt="Unlike!"width="60"></a>
+                    {{/if}}
+                    {{#if userNotLiked}}
+                    <a href="/reviews/{{review._id}}/likes"><img src="\images\heart empty 1.png" alt="Like!" width="60"></a>
+                    {{/if}}
+                   <p>Esta review tiene ==>"{{review.likes.length}}" likes  </p>
+                  </div>
+               
+            </div>
+            
+        </div>
+    </div>
+
+</section>

@@ -1,0 +1,32 @@
+<div align="center" style="margin-top: 2%">  
+
+  <form action="/user/profile/{{this._id}}/edit" method="POST" enctype="multipart/form-data">
+  <h2>Edit profile info</h2>
+
+<div class="row"> 
+<div class="col"></div>
+
+<div align="center"> 
+
+  <div style="margin-top: 1%"> 
+    <label> Username
+      <input type="text" name="username" value="{{username}}" />
+    </label>
+</div>
+
+   <div style="margin-top: 1%">  
+<label for="profilePic">Upload new Pic:</label>
+<input type="file" name="profilePic">
+</div>
+
+<div style="margin-top: 1%"> 
+<button type="submit" class="btn btn-dark btn-rounded">Update account</button>
+  </form>
+  </div>
+
+  </div>
+
+  </div>
+
+<div class="col"></div>
+  </div>

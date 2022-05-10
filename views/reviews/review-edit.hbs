@@ -1,0 +1,49 @@
+
+<div class="text-center" style="margin-top: 30px"> 
+<form action="/reviews/{{this._id}}/edit" method="POST" enctype="multipart/form-data">
+
+<h1>Edit your review</h1>
+<h3>Game: {{game.title}}</h3>
+
+
+<div class="row"> 
+<div class="col"></div>
+
+<div class="col"> 
+
+    <div style="margin-top: 1% " > 
+    <label>Title
+    <input type="text" name="title" class="form-control"  value="{{title}}" maxlength="24">
+ </div>
+
+<div style="margin-top: 1% " > 
+    <label>Description
+    <textarea name="description" class="form-control"  cols="30" rows="10">{{description}}</textarea>
+    </label>
+ </div>
+
+<div style="margin-top: 1% " > 
+    <label>URL of your image
+    <input type="file" name="imageUrl">
+    </label>
+ </div>
+
+<div style="margin-top: 1% " > 
+    <label>URL of your video
+    <input type="text" class="form-control" name="videoUrl" >
+    </label>
+
+    <div style="margin-top: 5% " > 
+    <button type="submit" class="btn btn-dark btn-rounded"> UPDATE REVIEW</button>
+</div>
+
+
+    <br>
+    </form>
+    <a href="/reviews/{{this._id}}/delete" ><button class="btn btn-danger btn-rounded">DELETE REVIEW</button></a>
+</div>
+ </div>
+<div class="col"></div>
+</div>
+
+ </div>

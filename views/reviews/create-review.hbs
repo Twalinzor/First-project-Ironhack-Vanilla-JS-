@@ -1,0 +1,51 @@
+<div align="center" style="margin-top: 2%">  
+
+<form action = "/games/{{gameDetail.id}}/details/create-review" method = "POST" enctype="multipart/form-data">
+
+<h1>{{gameDetail.title}}</h1> 
+<img src="{{gameDetail.thumbnail}}" alt="">
+
+<div style="margin-top: 1%"> 
+<p>{{gameDetail.short_description}}</p> 
+</div>
+
+</div>
+
+<div class="row"> 
+<h3>Create a New Review</h3>
+<div class="col"></div>
+
+<div align="center" class="col"> 
+
+    <label for="title">Title of the Review: </label>
+    <input type="text"  class="form-control"  name="title" maxlength="24">
+
+<div style="margin-top: 1% " > 
+    <label for="description" >Description: </label> 
+    <textarea name = "description" class="form-control"  placeholder="Write the review here..."> </textarea>
+</div>
+
+<div style="margin-top: 1%"> 
+ <label>URL of your video
+<input type="text" name="videoUrl" class="form-control"  placeholder="Paste here your video" >
+ </label>
+  </div>
+    
+<div style="margin-top: 1%"> 
+ <label>Share your image
+<input type="file" name="imageUrl">
+ </label>
+ </div>
+  
+  <div align="center" style="margin-top: 2%"> 
+<button type="submit" class="btn btn-dark">Submit Review</button>
+</form>
+</div>
+
+</div>
+
+<div class="col"></div>
+
+</div>
+
+

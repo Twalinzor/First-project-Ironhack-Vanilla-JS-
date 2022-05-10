@@ -1,0 +1,150 @@
+<div style="margin-top: 20px"> 
+  <h1 class="indexReviews">welcome to <span class="span">ctrlVgods!</span> <br> <p class="indexReviewsSmall">the IMDB of free-to-play videogames!</p></h1>
+</div>
+
+<div class ="marginTop">
+ <div class="container">
+  <div class="row">
+    
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+      <a href="/games/{{popularGames.[0].id}}/details"><img src="{{popularGames.[0].thumbnail}}" class="card-img-top" alt="..."></a>
+        <div class="card-body text-center">
+          <h5 class="card-title mb-0">{{popularGames.[0].title}}</h5>
+        
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+        <a href="/games/{{popularGames.[1].id}}/details"><img src="{{popularGames.[1].thumbnail}}" class="card-img-top" alt="..."></a>
+        <div class="card-body text-center">
+          <h5 class="card-title mb-0">{{popularGames.[1].title}}</h5>
+         
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+         <a href="/games/{{popularGames.[2].id}}/details"><img src="{{popularGames.[2].thumbnail}}" class="card-img-top" alt="..."></a>
+        <div class="card-body text-center">
+          <h5 class="card-title mb-0">{{popularGames.[2].title}}</h5>
+        
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-xl-3 col-md-6 mb-4">
+      <div class="card border-0 shadow">
+         <a href="/games/{{popularGames.[3].id}}/details"><img src="{{popularGames.[3].thumbnail}}" class="card-img-top" alt="..."></a>
+        <div class="card-body text-center">
+          <h5 class="card-title mb-0">{{popularGames.[3].title}}</h5>
+       
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2 class="indexReviews2">Check our most liked reviews!</h2>
+
+<div class="landingBg">
+<div class="landing">
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="width: 40%; box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);">
+    <div class="carousel-inner">
+      {{#each reviewResult}}
+<div class="carousel-item {{#unless @index}} active {{/unless}}">
+
+ <div class="card bg-dark text-white centerPic">
+  <a href="/reviews/{{_id}}/details"><img src="{{game.thumbnail}}" class="card-img" alt="game img"></a>
+  
+    <div class="rowuserAndtitle blackBackground" >
+      <div class="rowPicandName ">
+    <p class="card-text"><img src="{{author.profilePic}}" alt="" class="rounded-circle space" width="40" height="40">{{author.username}}</p>
+
+      </div>
+      <div>
+    <h5 class="card-title"><span class="rightMargin">" {{title}} "</span></h5>
+      </div>
+    </div>
+</div>
+
+      </div>
+      {{/each }}
+    </div>
+
+    
+
+
+
+    {{!-- 
+
+
+
+    <div class="card" >
+   
+    <div class="card-body">
+      <div class="rowReview" >
+        <div class="rowReview">
+      <img src="{{author.profilePic}}" alt="" class="rounded-circle space" width="40" height="40">
+      <h5 class="card-title">{{author.username}}</h5>
+
+        </div>
+      <p class="card-text">" {{title}} "</p>
+      </div>
+      <a href="/reviews/{{_id}}/details" class="btn btn-primary"><img src="{{game.thumbnail}}" class="d-block w-100" alt="..."></a>
+  
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+    
+    <div class="card bg-dark text-white">
+  <img src="..." class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <p class="card-text">Last updated 3 mins ago</p>
+  </div>
+</div>
+    
+     --}}
+
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  </div>
+</div>
+
+<div style="margin-top: 30px"> 
+<h1 class="indexReviews2">Our most active reviewers:</h1>
+
+<div class="mvpUsers">
+<div class="comment mt-4 text-justify float-left"> <img src="{{popularUsers.[0].profilePic}}" alt="" class="rounded-circle" width="200" height="200">
+  <h3>{{popularUsers.[0].username}}</h3>
+</div>
+
+<div class="comment mt-4 text-justify float-left"> <img src="{{popularUsers.[1].profilePic}}" alt="" class="rounded-circle" width="200" height="200">
+  <h3>{{popularUsers.[1].username}}</h3>
+</div>
+
+<div class="comment mt-4 text-justify float-left"> <img src="{{popularUsers.[2].profilePic}}" alt="" class="rounded-circle" width="200" height="200">
+  <h3>{{popularUsers.[2].username}}</h3>
+</div>
+</div>
+</div>
